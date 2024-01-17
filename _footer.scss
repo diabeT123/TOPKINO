@@ -1,0 +1,38 @@
+.footer {
+    background: $blackcolor;
+    padding: 2vw 0;
+    color: $whitecolor;
+    font-family: $textFont;
+}
+.footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+.footer__logo-section {
+    max-width: 400px;
+}
+.footer__logo {
+    color: $whitecolor;
+    text-transform: uppercase;
+    font-family: $titleFont;
+    font-size: calc(20px + 22 * (100vw / 1700));
+}
+.footer__text {
+    font-size: calc(16px + 2 * (100vw / 1700));
+    font-weight: 400;
+    opacity: 0.5;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+.footer__link {
+    transition: all .4s;
+    &:hover
+    {
+        color: $activecolor;
+    }
+}

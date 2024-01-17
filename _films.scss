@@ -1,0 +1,98 @@
+.films {
+    font-family: $textFont;
+    padding: 7vw 0;
+}
+.films__title
+{
+    font-size: calc(20px + 20 * (100vw / 1600));
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3vw;
+    color: $blackcolor;
+    font-family: $subtitleFont;
+}
+
+.films__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.films__list-item {
+    padding: 3vw 5vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #00000014;
+}
+
+.film__title {
+    font-family: $subtitleFont;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $blackcolor;
+    margin-bottom: 1.5vw;
+    font-size: calc(18px + 6 * (100vw / 1600));
+
+}
+.film__inner
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2vw;
+}
+.film__image-box {
+    img{
+        max-width: 250px;
+        border-radius: 10px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.film__grade {
+
+    font-size: calc(14px + 4 * (100vw / 1600));
+    font-weight: 600;
+
+    span{
+        font-size: calc(18px + 6 * (100vw / 1600));
+        color: $activecolor;
+        font-weight: 700;
+    }
+}
+.film__text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2vw;
+    padding: 2vw;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00000034;
+
+}
+.film__annotation {
+    font-weight: 500;
+    color: $blackcolor;
+}
+.film__button {
+    color: $whitecolor;
+    background: $activecolor;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    gap: 10px;
+
+    &::after
+    {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: url("/images/play.png") 0 0 / 100% no-repeat;
+        display: block;
+    }
+}
